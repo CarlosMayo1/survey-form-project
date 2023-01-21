@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="bg">
+      <img src="img/background-img.jpg" id="bg.img" alt="" />
+    </div>
+    <section id="survey">
+      <h1 id="title">Programming languages</h1>
+      <p id="description">
+        A survey to know your preferences about programming languages
+      </p>
+      <form id="survey-form">
+        <div class="form-input">
+          <label id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter you name"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label id="age-label"
+            >Age<span class="optional">&nbsp;(optional)</span></label
+          >
+          <input
+            type="number"
+            min="18"
+            max="70"
+            id="age"
+            name="age"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="form-input">
+          <label id="dropdown">Which languages would you like to learn?</label>
+          <select name="preference-language" id="preference-language" required>
+            <option value="" selected disabled>
+              Select the language of your preference
+            </option>
+            <option value="Php">Php</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Ruby">Ruby</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <p>Have you used any of these languages before?</p>
+          <div class="form-input__option-button">
+            <input type="radio" name="programming-language" />
+            <label>HTML</label>
+          </div>
+          <div class="form-input__option-button">
+            <input type="radio" name="programming-language" />
+            <label>CSS</label>
+          </div>
+          <div class="form-input__option-button">
+            <input type="radio" name="programming-language" />
+            <label>JavaScript</label>
+          </div>
+          <div class="form-input__option-button">
+            <input type="radio" name="programming-language" checked="checked" />
+            <label>None previous experience</label>
+          </div>
+        </div>
+        <div class="form-input">
+          <p>
+            Have you ever taken a programming course? if so, where?<span
+              class="optional"
+              >&nbsp;(select all that apply)</span
+            >
+          </p>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Free Code Camp"
+            />
+            <label>Free Code Camp</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Treehouse"
+            />
+            <label>Treehouse</label>
+          </div>
+          <div class="form-input__option-button">
+            <input type="checkbox" name="programming-platforms" value="Edx" />
+            <label>Edx</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Coursera"
+            />
+            <label>Coursera</label>
+          </div>
+          <div class="form-input__option-button">
+            <input type="checkbox" name="programming-platforms" value="Udemy" />
+            <label>Udemy</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Code School"
+            />
+            <label>Code School</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Code Wars"
+            />
+            <label>Code Wars</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Udacity"
+            />
+            <label>Udacity</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Codecacademy"
+            />
+            <label>Codecacademy</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Plurasight"
+            />
+            <label>Plurasight</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Khan Academy"
+            />
+            <label>Khan Academy</label>
+          </div>
+          <div class="form-input__option-button">
+            <input
+              type="checkbox"
+              name="programming-platforms"
+              value="Khan Academy"
+              checked
+            />
+            <label>None of them</label>
+          </div>
+        </div>
+        <div class="form-input">
+          <p>Why would you like to learn programming?</p>
+          <textarea
+            rows="6"
+            cols="50"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
